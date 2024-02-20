@@ -1,0 +1,84 @@
+/* Style for the EventCard component */
+body{
+  background: url(Eventbg.jpg);
+} 
+/* Style for the EventCard component */
+.event-card {
+  border: 3px solid #000;
+  border-radius: 12px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.7);
+  color: #000000;
+  margin: 16px;
+  padding: 16px;
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Description block style */
+.description-block {
+  margin-bottom: 16px;
+}
+
+/* Styling for each info block */
+.info-block {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* Styling for different blocks */
+.description-block {
+  background: hsla(350, 100%, 88%, 0.345); /* Pink background for description */
+}
+
+.info-block > div:nth-child(1) {
+  background: hsla(203, 92%, 75%, 0.22); 
+  /* Light blue background for Date */
+}
+
+.info-block > div:nth-child(2) {
+  background: hsla(203, 92%, 75%, 0.217); /* Pale green background for Time */
+}
+
+.info-block > div:nth-child(3) {
+  background: hsla(203, 92%, 75%, 0.215);/* Gold background for Location */
+}
+
+.info-block > div:nth-child(4) {
+  background: hsla(17, 100%, 74%, 0.221); /* Light salmon background for Organizer */
+}
+
+.info-block > div:nth-child(5) {
+  background: hsla(17, 100%, 74%, 0.208); /* Gold background for Contact */
+}
+
+.info-block > div:nth-child(6) {
+  background: hsla(197, 71%, 73%, 0.217); /* Sky blue background for Registration Deadline */
+}
+
+.info-block > div:nth-child(7) {
+  background: hsla(351, 100%, 86%, 0.233); /* Light pink background for Social Media Links */
+}
+
+/* Style for the labels (h2, p) inside EventCard */
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+  text-align: left;
+  
+}
+h1{
+  font-family:'Times New Roman', Times, serif;
+}
+p {
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Add a subtle border to separate content */
+hr {
+  border: 0.5px solid #ddd;
+  margin: 8px 0;
+}
