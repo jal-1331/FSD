@@ -1,0 +1,113 @@
+/* Styling for the event card container */
+.full {
+  background-color: #d695c1;
+}
+
+.event-card {
+  display: flex;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 16px;
+  padding: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f1bce7;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for the event card */
+.event-card:hover {
+  transform: scale(1.01);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+.date{
+
+  font-weight: bold;
+  transform: scale(1.01);
+  color: red;
+  
+}
+
+}
+.maker{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.select-button {
+  cursor: pointer;
+  padding: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin-bottom: 5px;
+}
+
+.select-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the description block */
+.description-block {
+  flex: 1;
+  margin-right: 16px; /* Add margin to separate from info block */
+}
+
+
+/* Styling for the heading of the event */
+.description-block h2 {
+  color: #000000;
+  font-size: 2em;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+/* Styling for the paragraphs in the description block */
+.description-block strong {
+  color: #000000;
+  line-height: 1.4;
+  margin-bottom: 2px;
+  
+}
+
+/* Styling for the info block */
+.info-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 200px; /* Minimum width for the info block */
+}
+
+/* Styling for the details in the info block */
+.info-block div {
+  margin-bottom: 8px;
+  color: #392b2b;
+  display: flex;
+  align-items: center; /* Align details vertically */
+}
+
+/* Styling for the strong (bold) text in the details */
+.info-block strong {
+  color: #333;
+  font-weight: bold;
+  margin-right: 8px; /* Add margin between label and value */
+}
+
+/* Styling for the event details */
+.info-block div span {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Styling for the date and time */
+.info-block div.date-time i {
+  margin-right: 8px;
+  color: #ff7f50;
+}
+.organizer{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}

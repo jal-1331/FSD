@@ -1,0 +1,206 @@
+/* Profile.css */
+
+.mainProfile-right {
+    width: 60%;
+    padding: 20px;
+    background-color: #f0f0f0; /* Attractive background color */
+    border-radius: 15px;
+    z-index: 0;
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    /* background-image: url("./back4.webp"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+.user-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.user-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff; /* Adjusted text color to white */
+    text-align: center;
+}
+
+.outer-container {
+    background-color: #d1a0c1d1; /* Adjusted background color to dark gray */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.backup {
+    height: 40%;
+    width: 100%;
+    background-color: #333;
+}
+
+.backlow {
+    height: 60%;
+    width: 100%;
+    background-color: #666;
+}
+
+.inner-container {
+    background-color: #a4b1b5; /* Inner background color */
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    height: 80%;
+    width: 80%;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.559) ;
+}
+
+.UserProfile {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    width: 40%;
+    align-items: center;
+}
+
+.UserProfile-up {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.UserProfile-down {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mainProfile-right img {
+    width: 100%;
+    height: auto;
+}
+
+/* Additional styles for UserEvents component */
+
+.user-event {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.event-item {
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.event-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.event-description {
+    font-size: 1rem;
+    color: #666;
+}
+
+.event-date {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Adjust styles as needed */
+/* Profile.css */
+
+.UserProfile-down button {
+    width: 100%;
+    max-width: 250px;
+    padding: 15px;
+    background-color: #F6F7C4;
+    color:black;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1;
+    &:hover {
+        background-color: #0056b3;
+    }
+
+    &.active {
+        background-color: #0056b3;
+    }
+}
+/* Styles for the blur effect when the modal is open */
+
+  /* Styles for the modal container */
+  .settings-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1f3e42;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Close button styles */
+  .settings-popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Other styles for the modal content */
+  .settings-popup h2 {
+    margin-bottom: 20px;
+  }
+  
+  .settings-popup label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .settings-popup input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+  }
+  
+  .settings-popup button {
+    background-color: #137f17;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
