@@ -1,34 +1,142 @@
 .header {
-    
-    height: 50px;
-    width: 100%;
-    
-    padding: 0 20px;
-    background-color: rgba(176, 224, 230, 0.457);
+  height: 50px;
+  width: 100%;
+  padding: 0 20px;
+  background-color: rgba(176, 224, 230, 0.457);
+}
+
+
+.nav {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav,
+.nav_item {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_logo,
+.nav_link,
+.button {
+  color: #000000;
+}
+
+.nav_logo {
+  font-size: 25px;
+}
+
+.nav_item {
+  column-gap: 25px;
+}
+
+.nav_link:hover {
+  color: #f00404;
+}
+
+/* Responsive Styles */
+/* ... existing styles ... */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: none; /* Hide the default checkbox input */
   }
-  .nav {
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .nav,
-  .nav_item {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .nav_logo,
-  .nav_link,
-  .button {
-    color: #000000;
-  }
-  .nav_logo {
+
+  .menu-icon {
+    display: block;
     font-size: 25px;
+    cursor: pointer;
   }
+
+  .nav_items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: rgba(176, 224, 230, 0.457);
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav_items.show {
+    display: flex;
+  }
+
+  .nav_item {
+    column-gap: 0;
+  }
+
+  .nav_link {
+    padding: 15px;
+    display: block;
+  }
+}
+
+/* Additional Styles for Larger Screens */
+/* ... existing styles ... */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: none; /* Hide the default checkbox input */
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .nav_items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: rgba(176, 224, 230, 0.457);
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav_items.show {
+    display: flex;
+  }
+
+  .nav_item {
+    column-gap: 0;
+  }
+
+  .nav_link {
+    padding: 15px;
+    display: block;
+  }
+}
+
+/* Additional Styles for Larger Screens */
+@media screen and (min-width: 769px) {
+  
+  .menu-toggle {
+    display: none; /* Hide the default checkbox input */
+  }
+  .nav_items {
+    display: flex !important; /* Show the navigation items for larger screens */
+  }
+  .menu-icon{
+    display: none;
+  }
+
   .nav_item {
     column-gap: 25px;
   }
-  .nav_link:hover {
-    color: #f00404;
+
+  .nav_link {
+    padding: 15px;
+    display: inline-block;
   }
+}
