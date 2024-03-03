@@ -85,7 +85,7 @@
   margin-bottom: 8px;
   color: #392b2b;
   display: flex;
-  align-items: center; /* Align details vertically */
+  /* align-items: center; Align details vertically */
 }
 
 /* Styling for the strong (bold) text in the details */
@@ -110,4 +110,38 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .event-card {
+    flex-direction: column; /* Stack cards vertically on small screens */
+    margin: 8px; /* Adjust margin for smaller spacing */
+  }
+  .description-block{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .buttonBlock{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+
+  .info-block {
+    min-width: auto; /* Allow info block to take full width on small screens */
+    margin-right: 0; /* Remove margin on smaller screens */
+  }
+  .info-block div{
+    margin: 0;
+  }
+
+  .description-block h2 {
+    font-size: 1.5em; /* Decrease font size for smaller screens */
+    margin-bottom: 20px; /* Adjust margin for smaller screens */
+  }
+  
+  .organizer {
+    flex-direction: column; /* Stack organizer items vertically on small screens */
+    gap: 10px; /* Adjust gap for smaller screens */
+  }
 }

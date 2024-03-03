@@ -68,7 +68,7 @@ const UserEvents = ({ user }) => {
   }, []); // Add user.email as a dependency to useEffect
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', flexDirection: 'column' }}>
+    <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', flexDirection: 'column', } }>
     {eventData && eventData.map((event) => (
       <EventCard key={event.eventId} {...event} onDelete={handleDelete} />
     ))}

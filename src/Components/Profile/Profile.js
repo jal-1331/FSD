@@ -192,7 +192,7 @@ if (response.ok) {
               }`}
               onClick={() => setUserOption('Your-Events')}
             >
-              Your Creates
+              My Creates
             </button>
             <button
               type="button"

@@ -83,25 +83,7 @@ const EventDetails = ({user}) => {
     <h1 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '8px', marginTop: '10px', fontSize: '2rem', color: 'white' }}></h1>
 
   <div style={{display:'flex',flexDirection:'row',alignItems:'center',justifyContent:'flex-end',height:'20px',marginBottom:'50px'}}>
-  <button
-
-  style={{
-    backgroundColor: '#0C359E',
-    border: 'none',
-    color: 'white',
-    padding: '10px 20px',
-    textAlign: 'center',
-    textDecoration: 'none',
-    display: 'inline-block',
-    fontSize: '16px',
-    margin: '10px',
-    cursor: 'pointer',
-    marginTop:'30px',
-    borderRadius:'7px'
-  }}
->
-Set All Selected Reminders
-</button>
+  
 </div>
 
     {eventData?.map((event, index) => (

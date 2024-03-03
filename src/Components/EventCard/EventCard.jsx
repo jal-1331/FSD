@@ -16,6 +16,7 @@ const EventCard = ({ event, onItemClick}) => {
   return (
     <div className={`event-card ${isSelected ? 'selected' : ''}`} onClick={handleItemClick}>
       <div className="description-block">
+        <div className='UpperBlock'> 
         <h2>{event.eventName}</h2>
        
         <div className='date'>
@@ -32,8 +33,8 @@ const EventCard = ({ event, onItemClick}) => {
           <strong>Registration Deadline:</strong> {event.registrationDeadline}
         </div>
        
-       
-
+        </div>
+        <div className='buttonBlock'>
         <button
         onClick={handleItemClick}
         value="Remind Me"
@@ -49,11 +50,13 @@ const EventCard = ({ event, onItemClick}) => {
           margin: '10px',
           cursor: 'pointer',
           marginTop:'70px',
-          borderRadius:'7px'
+          borderRadius:'7px',
+          height :'50px'
         }}
       >
        {isSelected? 'Remove From Add' : 'Add'}
       </button>
+      </div>
       
       </div>
       <div className="info-block">
