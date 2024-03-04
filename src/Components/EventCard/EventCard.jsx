@@ -51,7 +51,7 @@ const EventCard = ({ event, onItemClick}) => {
           cursor: 'pointer',
           marginTop:'70px',
           borderRadius:'7px',
-          height :'50px'
+          height :'70px'
         }}
       >
        {isSelected? 'Remove From Add' : 'Add'}

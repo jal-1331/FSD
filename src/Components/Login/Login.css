@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   user-select: none;
 }
 
-.bg-img{
-  /* background: url("./EventDetailbg.jpg");  */
+.bg-img {
   height: 100vh;
   background-size: cover;
   background-position: center;
   background-color: rgba(251, 51, 214, 0.546);
 }
-.bg-img:after{
+
+.bg-img:after {
   position: absolute;
   content: '';
   top: 0;
@@ -22,38 +23,44 @@
   width: 100%;
   background: rgba(54, 50, 50, 0.153);
 }
-.content{
+
+.content {
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: 999;
   text-align: center;
-  padding: 60px 32px;
-  width: 370px;
-  transform: translate(-50%,-50%);
+  padding: 60px 20px; /* Adjust padding for smaller screens */
+  width: 90%; /* Make the form wider on smaller screens */
+  max-width: 370px;
+  transform: translate(-50%, -50%);
   background: rgba(62, 51, 51, 0.443);
   box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.847);
 }
-.content header{
+
+.content header {
   color: white;
   font-size: 33px;
   font-weight: 600;
   margin: 0 0 35px 0;
-  font-family: 'Montserrat',sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
-.field{
+
+.field {
   position: relative;
   height: 45px;
   width: 100%;
   display: flex;
-  background: rgba(255,255,255,0.94);
+  background: rgba(255, 255, 255, 0.94);
 }
-.field span{
+
+.field span {
   color: #222;
   width: 40px;
   line-height: 45px;
 }
-.field input{
+
+.field input {
   height: 100%;
   width: 100%;
   background: transparent;
@@ -61,12 +68,14 @@
   outline: none;
   color: #222;
   font-size: 16px;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-.space{
+
+.space {
   margin-top: 16px;
 }
-.show{
+
+.show {
   position: absolute;
   right: 13px;
   font-size: 13px;
@@ -74,24 +83,29 @@
   color: #222;
   display: none;
   cursor: pointer;
-  font-family: 'Montserrat',sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
-.pass-key:valid ~ .show{
+
+.pass-key:valid~.show {
   display: block;
 }
-.pass{
+
+.pass {
   text-align: left;
   margin: 10px 0;
 }
-.pass a{
+
+.pass a {
   color: white;
   text-decoration: none;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-.pass:hover a{
+
+.pass:hover a {
   text-decoration: underline;
 }
-.field input[type="submit"]{
+
+.field input[type="submit"] {
   background: #3498db;
   border: 1px solid #2691d9;
   color: white;
@@ -99,63 +113,79 @@
   letter-spacing: 1px;
   font-weight: 600;
   cursor: pointer;
-  font-family: 'Montserrat',sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
-.field input[type="submit"]:hover{
+
+.field input[type="submit"]:hover {
   background: #2691d9;
 }
-.login{
+
+.login {
   color: white;
   margin: 20px 0;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-.links{
+
+.links {
   display: flex;
   cursor: pointer;
   color: white;
   margin: 0 0 20px 0;
 }
 
-.links i{
+.links i {
   font-size: 17px;
 }
-i span{
+
+i span {
   margin-left: 8px;
   font-weight: 500;
   letter-spacing: 1px;
   font-size: 16px;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-.signup{
+
+.signup {
   font-size: 15px;
   color: white;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-.signup a{
+
+.signup a {
   color: #000000;
   text-decoration: none;
   font-weight: bold;
 }
-.signup a:hover{
+
+.signup a:hover {
   text-decoration: underline;
 }
 
-.username{
-    margin-bottom: 20px;
+.username {
+  margin-bottom: 20px;
 }
-
-/* src/MyComponent.css */
 
 .message-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: white; 
-  width:250px;
+  color: white;
+  width: 90%; /* Make the message container wider on smaller screens */
   padding: 3px;
   align-items: center;
-  margin-bottom: 5px;/* White text color */ /* Padding around the content */ /* Top margin for separation */
+  margin-bottom: 5px;
   border-radius: 5px;
   background-color: black;
-  margin-left: 20px; /* Rounded corners */
+  margin-left: 5%; /* Center the message container */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .content {
+    padding: 60px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .field input[type="submit"] {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
 }

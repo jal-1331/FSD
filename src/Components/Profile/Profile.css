@@ -203,32 +203,31 @@
     cursor: pointer;
     border-radius: 10px;
   }
-  @media screen and (max-width: 768px) {
+ @media screen and (max-width: 768px) {
+
     .inner-container {
-      flex-direction: column; /* Stack items vertically on small screens */
-      width: 100%;
-      height: auto;
-    }
-  
-    .UserProfile {
-      width: 100%;
-    }
-  
-    .UserProfile-down {
-      flex-direction: row; /* Stack buttons vertically on small screens */
-      align-items: center;
-    }
-  
-    .mainProfile-right {
-      width: 100%;
-      margin-top: 20px; /* Add space between UserProfile and mainProfile-right on small screens */
-    }
-  
-    .settings-popup {
-      width: 80%; /* Adjust the width of the settings popup on small screens */
-    }
-    .btn{
-        height: 80px;
-        width: 100px;
-    }
-  }
+        flex-direction: column; /* Stack items vertically on small screens */
+        width: 100%;
+        /* height: auto; */
+      }
+    
+      .UserProfile {
+        width: 100%;
+        
+      }
+    
+      .UserProfile-down {
+        flex-direction: row; /* Stack buttons vertically on small screens */
+        align-items: center;
+      }
+    
+      .mainProfile-right {
+        width: 100%;
+        margin-top: 20px; /* Add space between UserProfile and mainProfile-right on small screens */
+      }
+    
+      .settings-popup {
+        width: 80%; /* Adjust the width of the settings popup on small screens */
+      }
+
+ }
