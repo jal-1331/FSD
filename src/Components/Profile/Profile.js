@@ -182,7 +182,7 @@ if (response.ok) {
       }`}
       onClick={handleSettingsClick}
     >
-        Settings
+        settings
     </button>
 
             <button

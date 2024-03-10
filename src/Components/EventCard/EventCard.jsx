@@ -34,29 +34,7 @@ const EventCard = ({ event, onItemClick}) => {
         </div>
        
         </div>
-        <div className='buttonBlock'>
-        <button
-        onClick={handleItemClick}
-        value="Remind Me"
-        style={{
-          backgroundColor: '#0C359E',
-          border: 'none',
-          color: 'white',
-          padding: '10px 20px',
-          textAlign: 'center',
-          textDecoration: 'none',
-          display: 'inline-block',
-          fontSize: '16px',
-          margin: '10px',
-          cursor: 'pointer',
-          marginTop:'70px',
-          borderRadius:'7px',
-          height :'70px'
-        }}
-      >
-       {isSelected? 'Remove From Add' : 'Add'}
-      </button>
-      </div>
+        
       
       </div>
       <div className="info-block">
