@@ -4,6 +4,7 @@ import Head from '../Head/Head';
 
 import EventCard from '../EventCard/EventCard'
 import { connect } from 'react-redux';
+import ContactUs from '../ContactUs/ContactUs';
 
 const mapStateToProps = (state) => {
   console.log(state);
@@ -88,7 +89,10 @@ const EventDetails = ({user}) => {
 
     {eventData?.map((event, index) => (
       <EventCard key={index} event={event} onItemClick={handleItemClick} isSelected={selectedItems.includes(event)} />
-    ))}
+    ))} 
+    <div> <ContactUs/></div>
+   
+
 
   </div>
   );

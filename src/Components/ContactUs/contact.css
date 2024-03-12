@@ -1,0 +1,75 @@
+
+
+.Heading{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact-us {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #ab919e58;
+  }
+  
+  .inf {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    /* text-align: left;
+    flex: 1; */
+    margin: 0 10px;
+  }
+  
+  .column p {
+    margin: 10px 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 20px; /* Vertically center icons within the social-icons container */
+  }
+  
+  .social-icons a {
+    margin-right: 30px; /* Adjust this value to increase or decrease space between icons */
+    
+    color: #ef0f0f;
+  }
+.elink{
+    margin: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .Heading {
+    flex-direction: row; /* Reset to row on larger screens */
+  }
+
+  .contact-details {
+    flex-direction: row; /* Reset to row on larger screens */
+  }
+
+  .column {
+    flex: 1;
+    text-align: left;
+  }
+  .column p{
+
+    margin: 20px;
+  }
+}
+  
