@@ -3,6 +3,7 @@ import { useLoaderData, useNavigate } from 'react-router-dom';
 import './Profile.css'; // Import your CSS file
 import UserEvents from '../User_Section/Start';
 import { connect } from 'react-redux';
+import Head from '../Head/Head';
 // import userLogoo from './userLogo.png';
 
 const mapStateToProps = (state) => {
@@ -111,7 +112,10 @@ if (response.ok) {
   };
 
   return (
+    <div>
+    <Head />
     <div className="outer-container">
+     
       <div className="inner-container">
         <div className="UserProfile">
           <div className="UserProfile-up">
@@ -175,7 +179,7 @@ if (response.ok) {
             </button>
 
       */}
-      <button
+      {/* <button
       type="button"
       className={`btn btn-lg btn-light ${
         userOption === 'userSetting' ? 'active' : ''
@@ -183,7 +187,7 @@ if (response.ok) {
       onClick={handleSettingsClick}
     >
         settings
-    </button>
+    </button> */}
 
             <button
               type="button"
@@ -210,6 +214,7 @@ if (response.ok) {
           {userOption === 'Your-Events' ? <UserEvents /> : null}
         </div>
       </div>
+    </div>
     </div>
   );
 };
