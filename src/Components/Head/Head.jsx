@@ -25,7 +25,7 @@ const Head = () => {
           <ul className={`nav_items ${isMenuOpen ? 'show' : ''}`}>
             <li className="nav_item">
               <Link to="/EventDetails" className="nav_link">Home</Link>
-              <Link to="#" className="nav_link">About</Link>
+              <Link to="/AboutUs" className="nav_link">About</Link>
               <Link to="ContactUs" className="nav_link">ContactUs</Link>
               <Link to="/Profile" className="nav_link">MyAccount</Link>
             </li>

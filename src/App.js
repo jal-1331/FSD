@@ -7,6 +7,7 @@ import  {Provider} from 'react-redux';
 import store from './Components/Redux_management/store';
 
 import EventDetails from './Components/EventDetails/EventDetails';
+import AboutUs from './Components/About/AboutUs';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/EventDetails" element={<EventDetails/>}/>
         <Route path="/Event" element={<Event/>}/>
         <Route path="/Profile" element={<Profile/>}/>
+        <Route path="/Aboutus" element={<AboutUs/>}/>
 
         </Routes>
       </Router> 

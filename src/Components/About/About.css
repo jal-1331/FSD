@@ -1,0 +1,26 @@
+.about-us {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f1bce7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .about-us h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; /* Adjust height as needed */
+  }
+  
+  .about-us p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
