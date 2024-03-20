@@ -90,8 +90,7 @@ const EventDetails = ({user}) => {
     {eventData?.map((event, index) => (
       <EventCard key={index} event={event} onItemClick={handleItemClick} isSelected={selectedItems.includes(event)} />
     ))} 
-    <div> <ContactUs/></div>
-   
+    
 
 
   </div>

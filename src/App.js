@@ -8,6 +8,7 @@ import store from './Components/Redux_management/store';
 
 import EventDetails from './Components/EventDetails/EventDetails';
 import AboutUs from './Components/About/AboutUs';
+import ContactUs from './Components/ContactUs/ContactUs';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Event" element={<Event/>}/>
         <Route path="/Profile" element={<Profile/>}/>
         <Route path="/Aboutus" element={<AboutUs/>}/>
+        <Route path="/ContactUs" element={<ContactUs />} />
 
         </Routes>
       </Router> 

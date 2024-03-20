@@ -6,12 +6,27 @@
     flex-direction: row;
     justify-content: space-around;
 }
+.staticdata{
+  background-color: ;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 50px;
+  background-color: #d695c1;
+  
+}
+.help{
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: lighter;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
 
 .contact-us {
     text-align: center;
     padding: 20px;
     font-size: 20px;
-    background-color: #ab919e58;
+    background-color: rgba(167, 158, 165, 0.589);
   }
   
   .inf {
@@ -71,5 +86,15 @@
 
     margin: 20px;
   }
+ img{
+  max-height: fit-content;
+  max-width: fit-content;
+ }
 }
-  
+@media screen and (min-width: 530px) {
+
+  img{
+    max-height: fit-content;
+    max-width: fit-content;
+  }
+}

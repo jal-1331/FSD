@@ -3,10 +3,24 @@
 import React from 'react';
 import { FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa';
 import './contact.css'
-
+import Head from '../Head/Head';
+import image from './image (2).png'
 const ContactUs = () => {
   return (
     <div className="contact-us">
+      <Head />
+      <div className='staticdata'>
+        Welcomet to hobbies <br>
+        </br>
+
+        <div className='help'>
+          <img src={image} height={'250px'}
+          width={'500px'}/><br></br>
+        we are always here to help you <br></br>
+        feel free to contact us on below detail 
+
+        </div>
+      </div>
         <div className='Heading'>
       <h2 className='inf'>Get in Touch</h2>
       <h2 className='inf'>Where we Are</h2>
