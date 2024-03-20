@@ -223,7 +223,7 @@ const handleAuthentication = async (e) => {
             </span>
           </div>
           <div className="pass">
-            <a href="#">Forgot Password?</a>
+            
           </div>
           <div className="field">
             <input type="submit" value={isLogin ? 'LOGIN' : 'SIGNUP'} />
