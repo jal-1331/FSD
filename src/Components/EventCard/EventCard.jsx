@@ -38,7 +38,7 @@ const EventCard = ({ event, onItemClick}) => {
       
       </div>
       <div className="info-block">
-      <p>{event.eventDescription}</p>
+      <p className='dis'>{event.eventDescription}</p>
       
       <div className='maker'>
       <div className='organizer'>

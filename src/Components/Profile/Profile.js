@@ -4,6 +4,7 @@ import './Profile.css'; // Import your CSS file
 import UserEvents from '../User_Section/Start';
 import { connect } from 'react-redux';
 import Head from '../Head/Head';
+import logo from './Hobbie logo.jpg'
 // import userLogoo from './userLogo.png';
 
 const mapStateToProps = (state) => {
@@ -19,7 +20,7 @@ const mapStateToProps = (state) => {
 const Profile = ({user}) => {
   const [userOption, setUserOption] = useState(null);
   const navigate = useNavigate();
-  const [userLogo, setUserLogo] = useState(null);
+  const [userLogo, setUserLogo] = useState(logo);
   const [showSettings, setShowSettings] = useState(false);
   const [userdata, setUserData] = useState({
     // your initial state properties

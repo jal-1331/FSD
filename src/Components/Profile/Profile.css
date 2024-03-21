@@ -116,10 +116,13 @@
     font-weight: bold;
     color: #333;
 }
-
+.dis{
+  width: 250px;
+}
 .event-description {
     font-size: 1rem;
     color: #666;
+    width: 200px;
 }
 
 .event-date {
